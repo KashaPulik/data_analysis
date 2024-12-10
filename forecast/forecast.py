@@ -32,12 +32,12 @@ forecast_data.to_csv('data1.csv', index=False)
 
 # Построение графика прогноза
 plt.figure(figsize=(10, 6))
-plt.plot(temperature_data.index, temperature_data.values, label='Actual Temperature')
-plt.plot(forecast_data['Date'], forecast_data['Forecast'], label='Forecast', linestyle='--')
+plt.plot(temperature_data.index, temperature_data.values, label='Настоящие данные')
+plt.plot(forecast_data['Date'], forecast_data['Forecast'], label='Прогноз', linestyle='--')
 plt.fill_between(forecast_data['Date'],
 forecast_data['Lower_CI'],
 forecast_data['Upper_CI'], color='gray', alpha=.1)
-plt.title('Temperature Forecast using SARIMA')
+plt.title('Прогноз данных на основе модели SARIMA')
 plt.legend()
 plt.savefig('temperature_forecast_sarima.png')
 

@@ -29,8 +29,8 @@ plt.plot(temperature_data1.index, temperature_data1.values, label='Настоя�
 plt.plot(temperature_data2.index, temperature_data2.values, label='Прогноз', linestyle='--', color='orange')
 
 plt.title('Сравнение прогноза и настоящих данных')
-plt.xlabel('Дата')
-plt.ylabel('Температура, °C')
+# plt.xlabel('Дата')
+# plt.ylabel('Температура, °C')
 plt.legend()
 plt.tight_layout()
 plt.savefig('comparison.png')
